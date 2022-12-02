@@ -1,15 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import './Country'
 import Country from './Country';
+import {BrowserRouter,Route,Routes } from 'react-router-dom';
+import Iframeparent from './iframeparent';
 
 function App() {
   return (
-    <div className="App">
-     
-      <Country/>
-
+    <div className="App"  >
+      
+     <BrowserRouter>
+     <Routes>
     
+     <Route exact path="/"    element={<Iframeparent/>}/>
+      <Route path="/Country" element={<Country/>} />
+        
+
+     </Routes>
+     </BrowserRouter>
+
     </div>
   );
 }
