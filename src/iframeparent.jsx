@@ -7,7 +7,7 @@ const iframeparent = () => {
     useEffect(() => {
         window.addEventListener("message",function(e) {
             
-         if(e.origin!="http://localhost:3000")return;
+         
          setreceivedmessage(""+e.data);
       console.log(receivedmessage);
         });

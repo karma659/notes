@@ -11,7 +11,7 @@ function App() {
      <BrowserRouter>
      <Routes>
     
-     <Route exact path="/"    element={<Iframeparent/>}/>
+     <Route  path="/"    element={<Iframeparent/>}/>
       <Route path="/Country" element={<Country/>} />
         
 
